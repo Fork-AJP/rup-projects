@@ -1,7 +1,11 @@
 @startuml
 !include ../StateDiagramsSetUp.puml
 
+state USECASE_MANAGEMENT_END as "USECASE_MANAGEMENT"
+
 USECASE_MANAGEMENT --> prioritizeUseCases
+
+state  3 as ":OpenUseCases"
 
 state prioritizeUseCases {
 
@@ -59,6 +63,8 @@ note on link
 * prioritization cancelled
 end note
 
-prioritizeUseCases --> ShowUseCases
+prioritizeUseCases --> 3
+
+3 --> USECASE_MANAGEMENT_END
 
 @enduml
