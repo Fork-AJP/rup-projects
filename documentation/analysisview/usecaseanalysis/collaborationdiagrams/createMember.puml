@@ -27,7 +27,7 @@ MembersManagementView -down-> CreateMemberDialog
 note on link
 new MemberDialog()
 end note
-CreateMemberDialog -down-> ConfirmDialog
+CreateMemberDialog -down- ConfirmDialog
 note on link
 new ConfirmDialog()
 confirm()
