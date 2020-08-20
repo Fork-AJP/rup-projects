@@ -20,22 +20,27 @@ user -right-> CreateMemberDialog
 note on link
 setName(name)
 setRoles(roles)
+end note
+
+user --> ConfirmDialog
+note on link
 confirm()
 cancel()
 end note
+
 MembersManagementView -down-> CreateMemberDialog
 note on link
 new MemberDialog()
 end note
 CreateMemberDialog -down- ConfirmDialog
 note on link
-new ConfirmDialog()
-confirm()
-cancel()
+<-- new ConfirmDialog()
+--> confirm()
+--> cancel()
 end note
 CreateMemberDialog -right-> CreateMemberController
 note on link
- createMember(member)
+createMember(member)
 end note
 CreateMemberDialog -right-> Member
 note on link

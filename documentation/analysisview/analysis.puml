@@ -37,16 +37,14 @@ package views {
     class MembersManagementView
     class UseCasesManagementView
 
-    class AssignActivityView implements Dialog
-    class CreateMemberView implements Dialog
-    class UpdateMemberView implements Dialog
-    class CreateUseCaseView implements Dialog
-    class UpdateUseCaseView implements Dialog
+    class AssignActivityDialog implements Dialog
+    class CreateMemberDialog implements Dialog
+    class UpdateMemberDialog implements Dialog
+    class CreateUseCaseDialog implements Dialog
 
-    class DeleteUseCaseView implements ConfirmationDialog
-    class CloseActivityView implements ConfirmationDialog
-    class DeleteMemberView implements ConfirmationDialog
-
+    class CloseActivityDialog implements ConfirmationDialog
+    class DeleteUseCaseDialog implements ConfirmationDialog
+    class DeleteMemberDialog implements ConfirmationDialog
 }
 
 package model {
